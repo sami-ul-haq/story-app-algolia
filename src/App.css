@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.posts {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.post-contaienr{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header{
+  padding: 20px 10px;
+  text-align: center;
+  background-color: #002B5B;
+  color: #fff;
+}
+
+.post {
+  background-color: #BACDDB;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px -6px #00000096;
+  margin-bottom: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post h2{
+  color: #000;
+  font-weight: 500;
+}
+
+.post p{
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.search-bar{
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.post a{
+  color: #000;
+  text-decoration: none;
+  margin-top: auto;
+  text-decoration: underline;
+}
+
+.no-posts{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-bar input{
+  padding: 20px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #E4DCCF;
+  border: 1px solid #E4DCCF;
+  font-size: 18px;
+}
+
+.search-bar button{
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #CE5959;
+  border: 1px solid #CE5959;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+}
+
+@media (max-width: 700px){
+  .post-contaienr{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}
